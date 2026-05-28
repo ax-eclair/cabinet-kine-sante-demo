@@ -1928,7 +1928,9 @@ a:focus-visible,
 
   .doctolib-panel {
     height: min(760px, calc(100vh - 24px));
-    padding: 26px 18px 22px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 26px 18px calc(34px + env(safe-area-inset-bottom));
     border-radius: 12px;
   }
 
@@ -1938,6 +1940,12 @@ a:focus-visible,
 
   .doctolib-provider {
     margin-inline: 0;
+  }
+
+  .doctolib-step {
+    flex: 0 0 auto;
+    overflow: visible;
+    padding-bottom: 12px;
   }
 
   .booking-options button {
@@ -1950,5 +1958,6 @@ a:focus-visible,
 
   .modal-actions {
     display: grid;
+    padding-bottom: max(18px, env(safe-area-inset-bottom));
   }
 }
