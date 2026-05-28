@@ -22,8 +22,12 @@
   </defs>
   <rect width="1200" height="630" fill="url(#page)"/>
   <rect width="1200" height="630" fill="url(#halo)"/>
-  <path d="M836 138c69-21 151 11 174 78 20 59-23 119-92 119-53 0-91-40-79-78 11-34 58-45 86-21" fill="none" stroke="#3935d1" stroke-opacity=".18" stroke-width="18" stroke-linecap="round"/>
-  <path d="M858 326c57 31 128 28 186-8" fill="none" stroke="#18a7a1" stroke-opacity=".28" stroke-width="14" stroke-linecap="round"/>
+  <g opacity=".58">
+    <circle cx="955" cy="236" r="92" fill="#dbe9ff" opacity=".55"/>
+    <circle cx="955" cy="236" r="66" fill="none" stroke="#3935d1" stroke-opacity=".12" stroke-width="14"/>
+    <circle cx="1054" cy="170" r="34" fill="#e4fbf7" opacity=".78"/>
+    <circle cx="1084" cy="322" r="44" fill="none" stroke="#18a7a1" stroke-opacity=".18" stroke-width="12"/>
+  </g>
   <g transform="translate(86 76)">
     <rect width="370" height="370" rx="78" fill="url(#bg)"/>
     <circle cx="185" cy="186" r="128" fill="#12465a" opacity=".72"/>
