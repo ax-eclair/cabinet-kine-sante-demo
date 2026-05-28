@@ -1,0 +1,21 @@
+{
+  "name": "Cabinet Kine Sante Grenoble",
+  "short_name": "Kine Sante",
+  "icons": [
+    {
+      "src": "assets/logo-kine-sante-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#0a2740",
+  "background_color": "#fbfcfc",
+  "display": "standalone"
+}

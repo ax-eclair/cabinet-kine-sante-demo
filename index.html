@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cabinet Kiné Santé Grenoble — Kinésithérapie et rééducation</title>
   <meta name="description" content="Cabinet de kinésithérapie à Grenoble : rééducation fonctionnelle, accompagnement à domicile, entraînement à l’effort et prise de rendez-vous en ligne.">
+  <meta name="theme-color" content="#0a2740">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Cabinet Kiné Santé Grenoble">
+  <meta property="og:title" content="Cabinet Kiné Santé Grenoble">
+  <meta property="og:description" content="Kinésithérapie, rééducation fonctionnelle et accompagnement personnalisé à Grenoble.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo du Cabinet Kiné Santé Grenoble">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cabinet Kiné Santé Grenoble">
+  <meta name="twitter:description" content="Kinésithérapie, rééducation fonctionnelle et accompagnement personnalisé à Grenoble.">
+  <meta name="twitter:image" content="assets/og-image.png">
+  <link rel="icon" href="assets/logo-kine-sante.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="assets/logo-kine-sante-512.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +31,7 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Cabinet Kiné Santé Grenoble, retour en haut de page">
-        <span class="brand-mark" aria-hidden="true">+</span>
+        <img class="brand-logo" src="assets/logo-kine-sante.svg" alt="" aria-hidden="true">
         <span>Cabinet Kiné Santé Grenoble</span>
       </a>
 
@@ -25,17 +43,17 @@
       </button>
 
       <nav class="primary-nav" id="primary-navigation" aria-label="Navigation principale">
-        <a href="#cabinet">Le cabinet</a>
         <a href="#equipe">L’équipe</a>
         <a href="#soins">Nos soins</a>
         <a href="#infos">Infos pratiques</a>
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn-primary btn-small" href="#pro">Créer un site comme ceci</a>
-        <button class="btn btn-ghost btn-small" type="button" data-doctolib-demo>RDV via Doctolib</button>
-        <a class="btn btn-outline btn-small" href="#contact">Nous contacter</a>
+        <button class="btn btn-primary btn-small" type="button" data-doctolib-demo>RDV via Doctolib</button>
+        <a class="btn btn-ghost btn-small" href="#contact">Nous contacter</a>
       </div>
+
+      <a class="site-demo-link" href="#pro">Créer un site comme ceci</a>
     </div>
   </header>
 
@@ -46,19 +64,13 @@
       </picture>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <p class="eyebrow">Cabinet de kinésithérapie à Grenoble</p>
         <h1 id="hero-title">Cabinet Kiné Santé Grenoble</h1>
-        <p class="hero-subtitle">Kinésithérapie, rééducation fonctionnelle, accompagnement à domicile et entraînement à l’effort à Grenoble.</p>
+        <p class="hero-subtitle">Kinésithérapie, rééducation fonctionnelle, accompagnement à domicile et entraînement à l’effort.</p>
         <div class="hero-actions">
           <!-- Dans une version finale, ce bouton peut ouvrir une iframe partners.doctolib.fr avec l’URL réelle du cabinet. -->
           <button class="btn btn-primary" type="button" data-doctolib-demo>Prendre rendez-vous sur Doctolib</button>
           <a class="btn btn-light" href="#pro">Créer un site comme celui-ci</a>
         </div>
-        <ul class="trust-list" aria-label="Points pratiques">
-          <li>Prise de rendez-vous en ligne</li>
-          <li>Cabinet accessible à Grenoble</li>
-          <li>Suivi personnalisé</li>
-        </ul>
       </div>
     </section>
 
@@ -97,6 +109,8 @@
     </section>
 
     <section class="section services" id="soins" aria-labelledby="services-title">
+      <div class="visual-mark visual-mark-services" aria-hidden="true">
+      </div>
       <div class="container">
         <div class="section-heading">
           <p class="section-kicker">Nos soins</p>
@@ -195,6 +209,8 @@
     </section>
 
     <section class="appointment" aria-labelledby="appointment-title">
+      <div class="visual-mark visual-mark-appointment" aria-hidden="true">
+      </div>
       <div class="container appointment-inner">
         <div>
           <p class="section-kicker">Rendez-vous</p>
@@ -376,68 +392,52 @@
             </div>
           </div>
           <h2 id="pro-title">Vous voulez un site comme celui-ci pour votre cabinet ?</h2>
-          <p>Cette page montre le rendu possible : une présentation sérieuse, des informations utiles pour les patients, une prise de rendez-vous visible et un formulaire orienté conversion.</p>
-          <p class="price">Site vitrine professionnel à partir de 299 €</p>
-          <p class="hosting">Atout principal : hébergement possible à 0 €/mois, selon la solution choisie.</p>
-          <ul class="pricing-details">
-            <li>Page simple : 299 €, prix ajustable selon le besoin</li>
-            <li>Site complet : à partir de 800 €</li>
-            <li>Petite modification mensuelle : 30 €</li>
-            <li>Modification importante ou ajout de contenu : devis adapté</li>
-            <li>Intégration d’un module de réservation, dont Doctolib via iframe si compatible : prix sur demande</li>
-          </ul>
+          <p>Un site vitrine clair, adapté au mobile, avec vos informations essentielles et un contact simple pour vos patients.</p>
+          <p class="price">À partir de 350 €</p>
+          <p class="hosting">Hébergement possible à 0 €/mois selon la solution choisie.</p>
+          <p class="maintenance-price">Petite modification : 30 € par demande ponctuelle.</p>
           <div class="pro-actions">
-            <a class="btn btn-primary" href="#contact">Demander une estimation</a>
-            <button class="btn btn-outline btn-on-dark" type="button" data-doctolib-demo>Voir l’exemple Doctolib</button>
+            <a class="btn btn-primary pro-contact-btn" href="mailto:giretaxel@gmail.com?subject=Demande%20de%20site%20web%20cabinet">Me contacter pour mon site</a>
           </div>
         </div>
         <div class="pro-offer">
-          <h3>Ce qui peut être inclus</h3>
+          <h3>L’essentiel inclus</h3>
           <ul class="feature-list">
-            <li>présentation du cabinet</li>
-            <li>soins et spécialités</li>
-            <li>horaires et informations pratiques</li>
-            <li>bouton Doctolib</li>
-            <li>formulaire de contact</li>
-            <li>localisation</li>
-            <li>version mobile</li>
-            <li class="feature-nowrap">hébergement possible à 0 €/mois</li>
+            <li>Page d’accueil</li>
+            <li>Présentation activité</li>
+            <li>Horaires</li>
+            <li>Formulaire de contact</li>
+            <li>Localisation</li>
+            <li class="feature-highlight">Version mobile</li>
           </ul>
-          <div class="pro-steps" aria-label="Étapes de création">
-            <span>1. Court échange</span>
-            <span>2. Adaptation du contenu</span>
-            <span>3. Mise en ligne</span>
+          <div class="options-block">
+            <h3>Options</h3>
+            <ul class="option-list">
+              <li>Intégration Doctolib si compatible</li>
+            </ul>
+          </div>
+          <div class="process-block">
+            <h3>Processus simple</h3>
+            <ol class="pro-steps" aria-label="Déroulé de création du site">
+              <li>Échange rapide sur votre activité</li>
+              <li>Création d’une première version</li>
+              <li>Ajustements puis mise en ligne</li>
+            </ol>
           </div>
         </div>
       </div>
+      <div class="container creator-credit">
+        <p>Site créé par Axel Giret — <a href="mailto:giretaxel@gmail.com">giretaxel@gmail.com</a></p>
+      </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Cabinet Kiné Santé Grenoble</strong>
-        <p>Kinésithérapie, rééducation et accompagnement à Grenoble.</p>
-      </div>
-      <nav aria-label="Navigation de pied de page">
-        <a href="#cabinet">Le cabinet</a>
-        <a href="#soins">Nos soins</a>
-        <a href="#infos">Infos pratiques</a>
-        <a href="#pro">Créer un site</a>
-      </nav>
-    </div>
-    <div class="container legal">
-      <p>© 2026 Cabinet Kiné Santé Grenoble — Site de démonstration.</p>
-      <p>Ce site est une maquette de démonstration et ne représente pas un cabinet réel.</p>
-    </div>
-  </footer>
 
   <div class="doctolib-modal" id="doctolib-demo-modal" role="dialog" aria-modal="true" aria-labelledby="doctolib-modal-title" aria-hidden="true">
     <div class="doctolib-backdrop" data-doctolib-close></div>
     <div class="doctolib-panel" role="document">
       <button class="doctolib-close" type="button" aria-label="Fermer la démonstration Doctolib" data-doctolib-close>×</button>
       <div class="doctolib-brand">
-        <span class="brand-mark" aria-hidden="true">+</span>
+        <img class="brand-logo" src="assets/logo-kine-sante.svg" alt="" aria-hidden="true">
         <div>
           <strong>Cabinet Kiné Santé Grenoble</strong>
           <small>Module de prise de rendez-vous</small>
@@ -527,9 +527,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Dans une version finale, ce bouton peut ouvrir une iframe partners.doctolib.fr avec l’URL réelle du cabinet. -->
-  <a class="mobile-cta" href="#pro">Créer un site comme ceci</a>
 
   <script src="script.js"></script>
 </body>

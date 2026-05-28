@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Cabinet Kine Sante Grenoble</title>
+  <desc id="desc">Logo avec montagnes, coeur et croix medicale.</desc>
+  <defs>
+    <linearGradient id="bg" x1="72" y1="36" x2="440" y2="476" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0e3d50"/>
+      <stop offset="1" stop-color="#092d43"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="160" y1="170" x2="352" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34d2d1"/>
+      <stop offset="1" stop-color="#1ca7a6"/>
+    </linearGradient>
+    <linearGradient id="mountainShade" x1="128" y1="218" x2="386" y2="322" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#edf7f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#bg)"/>
+  <circle cx="256" cy="258" r="176" fill="#12465a" opacity=".72"/>
+  <path d="M104 322 201 190l55 72 58-48 94 108H104Z" fill="url(#mountainShade)"/>
+  <path d="m177 224 24-34 55 72 27-23 37 30 18-29-24-26-58 48-55-72-40 55 18-21Z" fill="url(#teal)"/>
+  <path d="M256 364c-35-30-62-52-62-86 0-27 20-48 47-48 17 0 29 8 37 22 8-14 21-22 38-22 27 0 47 21 47 48 0 34-27 56-62 86l-23 20-22-20Z" fill="url(#teal)"/>
+  <path d="M248 292h16v16h16v17h-16v16h-16v-16h-16v-17h16v-16Z" fill="#f7fbfc"/>
+</svg>
