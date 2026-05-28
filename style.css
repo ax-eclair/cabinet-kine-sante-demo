@@ -1833,6 +1833,10 @@ a:focus-visible,
     min-height: 650px;
   }
 
+  .hero-image {
+    object-position: 68% center;
+  }
+
   .hero-overlay {
     background:
       linear-gradient(180deg, rgba(5, 22, 37, 0.84), rgba(10, 39, 64, 0.62)),
