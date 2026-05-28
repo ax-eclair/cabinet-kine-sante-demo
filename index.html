@@ -24,6 +24,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="style.css">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu principal</a>
@@ -65,11 +66,10 @@
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <h1 id="hero-title">Cabinet Kiné Santé Grenoble</h1>
-        <p class="hero-subtitle">Kinésithérapie, rééducation fonctionnelle, accompagnement à domicile et entraînement à l’effort.</p>
+        <p class="hero-subtitle">Kinésithérapie et rééducation à Grenoble.</p>
         <div class="hero-actions">
-          <!-- Dans une version finale, ce bouton peut ouvrir une iframe partners.doctolib.fr avec l’URL réelle du cabinet. -->
           <button class="btn btn-primary" type="button" data-doctolib-demo>Prendre rendez-vous sur Doctolib</button>
-          <a class="btn btn-light" href="#pro">Créer un site comme celui-ci</a>
+          <a class="btn btn-light" href="#contact">Nous contacter</a>
         </div>
       </div>
     </section>
@@ -83,8 +83,10 @@
         </article>
         <article class="info-card">
           <span class="info-label">Adresse</span>
-          <strong>11 boulevard Jean Pain</strong>
-          <p>38000 Grenoble</p>
+          <a class="info-link-stack" href="https://www.google.com/maps/search/?api=1&query=11%20boulevard%20Jean%20Pain%2038000%20Grenoble" target="_blank" rel="noopener">
+            <strong>11 boulevard Jean Pain</strong>
+            <span>38000 Grenoble</span>
+          </a>
         </article>
         <article class="info-card">
           <span class="info-label">Rendez-vous</span>
@@ -93,8 +95,8 @@
         </article>
         <article class="info-card">
           <span class="info-label">Contact</span>
-          <strong>04 00 00 00 00</strong>
-          <p>contact@kine-sante-grenoble.fr</p>
+          <strong><a href="tel:+33400000000">04 00 00 00 00</a></strong>
+          <p><a href="mailto:contact@kine-sante-grenoble.fr">contact@kine-sante-grenoble.fr</a></p>
         </article>
       </div>
     </section>
@@ -102,9 +104,8 @@
     <section class="section intro" id="cabinet" aria-labelledby="intro-title">
       <div class="container narrow">
         <p class="section-kicker">Le cabinet</p>
-        <h2 id="intro-title">Un accompagnement clair, humain et personnalisé</h2>
-        <p>Au Cabinet Kiné Santé Grenoble, nous accompagnons chaque patient avec une prise en charge adaptée à ses besoins : rééducation après blessure ou opération, douleurs du dos, perte de mobilité, reprise d’activité physique ou suivi à domicile.</p>
-        <p>Notre objectif est simple : vous aider à retrouver du confort, de la mobilité et de la confiance dans vos mouvements, avec un suivi progressif et professionnel.</p>
+        <h2 id="intro-title">Un suivi clair et personnalisé</h2>
+        <p>Rééducation, douleurs du dos, reprise du sport ou suivi à domicile.</p>
       </div>
     </section>
 
@@ -114,8 +115,7 @@
       <div class="container">
         <div class="section-heading">
           <p class="section-kicker">Nos soins</p>
-          <h2 id="services-title">Nos soins et accompagnements</h2>
-          <p>Des prises en charge adaptées à votre situation, avec un suivi progressif et des objectifs clairs à chaque étape.</p>
+          <h2 id="services-title">Nos soins</h2>
         </div>
         <div class="card-grid service-grid">
           <article class="service-card">
@@ -128,7 +128,7 @@
               <span class="service-number">01</span>
             </div>
             <h3>Kinésithérapie générale</h3>
-            <p>Bilan, traitement et suivi personnalisé pour les douleurs, les troubles fonctionnels et les besoins de rééducation du quotidien.</p>
+            <p>Bilan, douleurs et rééducation du quotidien.</p>
           </article>
           <article class="service-card">
             <div class="service-top" aria-hidden="true">
@@ -143,7 +143,7 @@
               <span class="service-number">02</span>
             </div>
             <h3>Rééducation fonctionnelle</h3>
-            <p>Travail progressif de la mobilité, de la force et de la coordination après blessure, opération ou immobilisation.</p>
+            <p>Mobilité, force et récupération après blessure.</p>
           </article>
           <article class="service-card">
             <div class="service-top" aria-hidden="true">
@@ -157,7 +157,7 @@
               <span class="service-number">03</span>
             </div>
             <h3>Rééducation à domicile</h3>
-            <p>Accompagnement possible à domicile pour les patients ayant des difficultés à se déplacer ou nécessitant un suivi adapté.</p>
+            <p>Suivi possible à domicile selon les besoins.</p>
           </article>
           <article class="service-card">
             <div class="service-top" aria-hidden="true">
@@ -170,7 +170,7 @@
               <span class="service-number">04</span>
             </div>
             <h3>Entraînement à l’effort</h3>
-            <p>Reprise progressive de l’activité physique, amélioration de l’endurance et accompagnement dans le retour au mouvement.</p>
+            <p>Reprise progressive de l’activité physique.</p>
           </article>
           <article class="service-card">
             <div class="service-top" aria-hidden="true">
@@ -186,7 +186,7 @@
               <span class="service-number">05</span>
             </div>
             <h3>Douleurs du dos</h3>
-            <p>Prise en charge des douleurs lombaires, cervicales et dorsales avec une approche active et personnalisée.</p>
+            <p>Lombaires, cervicales et douleurs dorsales.</p>
           </article>
           <article class="service-card">
             <div class="service-top" aria-hidden="true">
@@ -202,7 +202,7 @@
               <span class="service-number">06</span>
             </div>
             <h3>Kinésithérapie du sport</h3>
-            <p>Suivi des sportifs, prévention des blessures et accompagnement au retour à l’activité.</p>
+            <p>Prévention et retour à l’activité.</p>
           </article>
         </div>
       </div>
@@ -214,12 +214,10 @@
       <div class="container appointment-inner">
         <div>
           <p class="section-kicker">Rendez-vous</p>
-          <h2 id="appointment-title">Prenez rendez-vous simplement</h2>
-          <p>Vous pouvez prendre rendez-vous en ligne via Doctolib ou contacter directement le cabinet pour toute question pratique.</p>
-          <p class="note">Le lien Doctolib sera remplacé par le profil réel du cabinet.</p>
+          <h2 id="appointment-title">Prendre rendez-vous</h2>
+          <p>En ligne via Doctolib ou par téléphone.</p>
         </div>
         <div class="appointment-actions">
-          <!-- Dans une version finale, ce bouton peut ouvrir une iframe partners.doctolib.fr avec l’URL réelle du cabinet. -->
           <button class="btn btn-primary" type="button" data-doctolib-demo>Prendre RDV sur Doctolib</button>
           <a class="btn btn-outline" href="tel:+33400000000">Appeler le cabinet</a>
         </div>
@@ -234,7 +232,7 @@
           <dl class="details-list">
             <div>
               <dt>Adresse</dt>
-              <dd>11 boulevard Jean Pain, 38000 Grenoble</dd>
+              <dd><a href="https://www.google.com/maps/search/?api=1&query=11%20boulevard%20Jean%20Pain%2038000%20Grenoble" target="_blank" rel="noopener">11 boulevard Jean Pain, 38000 Grenoble</a></dd>
             </div>
             <div>
               <dt>Horaires</dt>
@@ -246,7 +244,7 @@
             </div>
             <div>
               <dt>Contact</dt>
-              <dd>04 00 00 00 00<br>contact@kine-sante-grenoble.fr</dd>
+              <dd><a href="tel:+33400000000">04 00 00 00 00</a><br><a href="mailto:contact@kine-sante-grenoble.fr">contact@kine-sante-grenoble.fr</a></dd>
             </div>
           </dl>
         </div>
@@ -266,8 +264,7 @@
       <div class="container">
         <div class="section-heading">
           <p class="section-kicker">L’équipe</p>
-          <h2 id="team-title">Un accompagnement à votre écoute</h2>
-          <p>Le cabinet vous accueille avec une approche sérieuse, bienveillante et orientée vers des objectifs concrets. Chaque prise en charge commence par une écoute attentive afin de proposer un suivi adapté.</p>
+          <h2 id="team-title">Une prise en charge attentive</h2>
         </div>
         <div class="team-profile">
           <article class="team-card team-card-featured">
@@ -301,7 +298,7 @@
               </button>
             </h3>
             <div class="faq-answer" hidden>
-              <p>Dans la plupart des cas, une prescription médicale est nécessaire pour une prise en charge remboursée. Vous pouvez contacter le cabinet pour vérifier votre situation.</p>
+              <p>Souvent oui pour une prise en charge remboursée.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -312,7 +309,7 @@
               </button>
             </h3>
             <div class="faq-answer" hidden>
-              <p>Oui, un lien Doctolib permet de prendre rendez-vous facilement en ligne lorsque le profil du cabinet est configuré.</p>
+              <p>Oui, via Doctolib.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -323,7 +320,7 @@
               </button>
             </h3>
             <div class="faq-answer" hidden>
-              <p>Oui, un accompagnement à domicile peut être proposé selon la situation du patient et les disponibilités du cabinet.</p>
+              <p>Oui, selon la situation et les disponibilités.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -334,7 +331,7 @@
               </button>
             </h3>
             <div class="faq-answer" hidden>
-              <p>Le cabinet accompagne les patients en kinésithérapie générale, rééducation fonctionnelle, douleurs du dos, rééducation post-opératoire, kinésithérapie du sport et entraînement à l’effort.</p>
+              <p>Kinésithérapie générale, rééducation, dos, sport et effort.</p>
             </div>
           </div>
         </div>
@@ -345,16 +342,15 @@
       <div class="container two-column contact-layout">
         <div>
           <p class="section-kicker">Contact cabinet</p>
-          <h2 id="contact-title">Contacter le cabinet</h2>
-          <p>Une question avant de prendre rendez-vous, un besoin de suivi ou une demande d’information pratique ? Laissez vos coordonnées, le cabinet vous recontacte rapidement.</p>
+          <h2 id="contact-title">Contact</h2>
+          <p>Laissez vos coordonnées, le cabinet vous recontacte.</p>
           <ul class="contact-points">
-            <li>Réponse pour une question de prise en charge</li>
-            <li>Informations sur les horaires et l’accès au cabinet</li>
-            <li>Orientation vers Doctolib pour réserver un créneau</li>
+            <li>Question de prise en charge</li>
+            <li>Horaires et accès</li>
+            <li>Rendez-vous Doctolib</li>
           </ul>
         </div>
         <form class="contact-form" id="contact-form" novalidate>
-          <!-- Formulaire patient de démonstration : à connecter ensuite au service choisi par le cabinet. -->
           <div class="form-field">
             <label for="name">Nom et prénom</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
@@ -371,9 +367,13 @@
             <small class="field-error" aria-live="polite"></small>
           </div>
           <div class="form-field">
-            <label for="message">Motif de votre demande</label>
-            <textarea id="message" name="message" rows="5" placeholder="Exemple : douleur du dos, rééducation après opération, reprise du sport, question sur un rendez-vous ou suivi à domicile..." required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre demande..." required></textarea>
             <small class="field-error" aria-live="polite"></small>
+          </div>
+          <div class="turnstile-field">
+            <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="light"></div>
+            <small class="turnstile-error" id="turnstile-error" aria-live="polite"></small>
           </div>
           <button class="btn btn-primary" type="submit">Envoyer ma demande</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
@@ -391,13 +391,13 @@
               <strong>0 €</strong>
             </div>
           </div>
-          <h2 id="pro-title">Vous voulez un site comme celui-ci pour votre cabinet ?</h2>
+          <h2 id="pro-title">Créer un site comme celui-ci</h2>
           <p class="price">À partir de 350 €</p>
-          <p>Un site vitrine clair, adapté au mobile, avec vos informations essentielles et un contact simple pour vos patients.</p>
+          <p>Un site clair, mobile, avec vos infos essentielles.</p>
           <p class="hosting">Hébergement possible à 0 €/mois selon la solution choisie.</p>
           <p class="maintenance-price">Petite modification : 30 € par demande ponctuelle.</p>
           <div class="pro-actions">
-            <a class="btn btn-primary pro-contact-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=giretaxel@gmail.com&su=Demande%20d%E2%80%99estimation%20pour%20la%20cr%C3%A9ation%20d%E2%80%99un%20site%20web&body=Bonjour%20Axel%2C%0A%0AJe%20souhaite%20obtenir%20une%20estimation%20pour%20la%20cr%C3%A9ation%20d%E2%80%99un%20site%20web%20professionnel.%0A%0AVoici%20les%20premi%C3%A8res%20informations%20concernant%20mon%20projet%20%3A%0A%0ANom%20du%20cabinet%20%2F%20de%20l%E2%80%99activit%C3%A9%20%3A%0AProfession%20%3A%0AVille%20%3A%0ASite%20souhait%C3%A9%20%3A%20page%20simple%20%2F%20site%20complet%0AContenus%20%C3%A0%20int%C3%A9grer%20%3A%20pr%C3%A9sentation%2C%20soins%2C%20horaires%2C%20localisation%2C%20formulaire%20de%20contact%2C%20autre%0AInt%C3%A9gration%20Doctolib%20souhait%C3%A9e%20%3A%20oui%20%2F%20non%20%2F%20%C3%A0%20confirmer%0AD%C3%A9lai%20id%C3%A9al%20de%20mise%20en%20ligne%20%3A%0A%0AVous%20pouvez%20me%20recontacter%20par%20email%20ou%20t%C3%A9l%C3%A9phone%20afin%20d%E2%80%99%C3%A9changer%20sur%20le%20projet.%0A%0ABien%20cordialement%2C" target="_blank" rel="noopener">
+            <a class="btn btn-primary pro-contact-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=giretaxel%40gmail.com&su=Estimation+pour+cr%C3%A9er+mon+site&body=Bonjour+Axel%2C%0A%0AJe+suis+int%C3%A9ress%C3%A9%28e%29+par+la+cr%C3%A9ation+d%27un+site+web.%0A%0AProfession+%3A%0AVille+%3A%0AType+de+site+souhait%C3%A9+%3A%0ADoctolib+%3A+oui+%2F+non%0A%0AMerci%2C" target="_blank" rel="noopener">
               <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                 <path d="M4 6h16v12H4z"></path>
                 <path d="m4 7 8 6 8-6"></path>

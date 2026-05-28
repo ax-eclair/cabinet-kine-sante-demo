@@ -477,6 +477,20 @@ h3 {
   margin-bottom: 0;
 }
 
+.info-card a,
+.details-list a {
+  text-decoration: underline;
+  text-decoration-color: rgba(24, 167, 161, 0.34);
+  text-underline-offset: 3px;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.info-card a:hover,
+.details-list a:hover {
+  color: var(--blue);
+  text-decoration-color: currentColor;
+}
+
 .section {
   padding: 110px 0;
 }

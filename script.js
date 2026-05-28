@@ -4,6 +4,7 @@ const navLinks = document.querySelectorAll('a[href^="#"]');
 const faqButtons = document.querySelectorAll(".faq-question");
 const form = document.querySelector("#contact-form");
 const formStatus = document.querySelector("#form-status");
+const turnstileError = document.querySelector("#turnstile-error");
 const doctolibModal = document.querySelector("#doctolib-demo-modal");
 const doctolibTriggers = document.querySelectorAll("[data-doctolib-demo]");
 const doctolibCloseButtons = document.querySelectorAll("[data-doctolib-close]");
@@ -175,7 +176,7 @@ if (form) {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     let isValid = true;
-    const fields = Array.from(form.querySelectorAll("input, textarea"));
+    const fields = Array.from(form.querySelectorAll(".form-field input, .form-field textarea"));
 
     fields.forEach((field) => {
       const value = field.value.trim();
@@ -197,13 +198,27 @@ if (form) {
       setFieldError(field, message);
     });
 
+    const turnstileToken = form.querySelector('[name="cf-turnstile-response"]')?.value || "";
+    if (!turnstileToken) {
+      isValid = false;
+      if (turnstileError) {
+        turnstileError.textContent = "Merci de valider la vérification de sécurité.";
+      }
+    } else if (turnstileError) {
+      turnstileError.textContent = "";
+    }
+
     if (!isValid) {
       formStatus.textContent = "Merci de vérifier les champs indiqués.";
       return;
     }
 
     form.reset();
+    window.turnstile?.reset?.();
     fields.forEach((field) => setFieldError(field, ""));
-    formStatus.textContent = "Merci, votre demande a bien été préparée. Le formulaire sera connecté au service d’envoi choisi par le cabinet dans la version finale.";
+    if (turnstileError) {
+      turnstileError.textContent = "";
+    }
+    formStatus.textContent = "Merci, votre demande est prête.";
   });
 }
