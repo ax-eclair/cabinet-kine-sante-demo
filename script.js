@@ -189,6 +189,6 @@ if (form) {
 
     form.reset();
     fields.forEach((field) => setFieldError(field, ""));
-    formStatus.textContent = "Merci, votre demande de démo a bien été préparée. Le formulaire sera connecté à un service d’envoi dans la version finale.";
+    formStatus.textContent = "Merci, votre demande a bien été préparée. Le formulaire sera connecté au service d’envoi choisi par le cabinet dans la version finale.";
   });
 }

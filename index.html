@@ -101,6 +101,7 @@
         <div class="section-heading">
           <p class="section-kicker">Nos soins</p>
           <h2 id="services-title">Nos soins et accompagnements</h2>
+          <p>Des prises en charge adaptées à votre situation, avec un suivi progressif et des objectifs clairs à chaque étape.</p>
         </div>
         <div class="card-grid service-grid">
           <article class="service-card">
@@ -249,21 +250,23 @@
       <div class="container">
         <div class="section-heading">
           <p class="section-kicker">L’équipe</p>
-          <h2 id="team-title">Une équipe à votre écoute</h2>
-          <p>Notre équipe de kinésithérapeutes accompagne les patients avec une approche sérieuse, bienveillante et orientée vers des objectifs concrets. Chaque prise en charge commence par une écoute attentive afin de proposer un suivi adapté.</p>
+          <h2 id="team-title">Un accompagnement à votre écoute</h2>
+          <p>Le cabinet vous accueille avec une approche sérieuse, bienveillante et orientée vers des objectifs concrets. Chaque prise en charge commence par une écoute attentive afin de proposer un suivi adapté.</p>
         </div>
-        <div class="card-grid team-grid">
-          <article class="team-card">
-            <h3>Kinésithérapeute</h3>
-            <p>Rééducation fonctionnelle</p>
-          </article>
-          <article class="team-card">
-            <h3>Kinésithérapeute</h3>
-            <p>Sport & mouvement</p>
-          </article>
-          <article class="team-card">
-            <h3>Kinésithérapeute</h3>
-            <p>Suivi à domicile</p>
+        <div class="team-profile">
+          <article class="team-card team-card-featured">
+            <div class="team-photo">
+              <img src="assets/equipe-kinesitherapeute.png" alt="Portrait du kinésithérapeute du Cabinet Kiné Santé Grenoble">
+            </div>
+            <div class="team-content">
+              <span class="section-kicker">Kinésithérapeute</span>
+              <h3>Rééducation fonctionnelle</h3>
+              <ul class="team-list">
+                <li>Concours d’entrée via STAPS à Grenoble</li>
+                <li>École de kinésithérapie à l’IFKM de Grenoble</li>
+                <li>Deux ans d’expérience comme kinésithérapeute à Grenoble</li>
+              </ul>
+            </div>
           </article>
         </div>
       </div>
@@ -325,19 +328,19 @@
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="container two-column contact-layout">
         <div>
-          <p class="section-kicker">Votre projet</p>
-          <h2 id="contact-title">Demander une démo personnalisée</h2>
-          <p>Ce formulaire est destiné aux professionnels qui veulent comprendre comment adapter ce type de site à leur cabinet, leur activité ou leur façon de recevoir les patients.</p>
+          <p class="section-kicker">Contact cabinet</p>
+          <h2 id="contact-title">Contacter le cabinet</h2>
+          <p>Une question avant de prendre rendez-vous, un besoin de suivi ou une demande d’information pratique ? Laissez vos coordonnées, le cabinet vous recontacte rapidement.</p>
           <ul class="contact-points">
-            <li>Retour rapide sur votre besoin</li>
-            <li>Estimation claire avant de commencer</li>
-            <li>Présentation possible en appel court</li>
+            <li>Réponse pour une question de prise en charge</li>
+            <li>Informations sur les horaires et l’accès au cabinet</li>
+            <li>Orientation vers Doctolib pour réserver un créneau</li>
           </ul>
         </div>
         <form class="contact-form" id="contact-form" novalidate>
-          <!-- Formulaire de démonstration : à connecter ensuite à Formspree, Netlify Forms, Basin ou à un backend personnalisé. -->
+          <!-- Formulaire patient de démonstration : à connecter ensuite au service choisi par le cabinet. -->
           <div class="form-field">
-            <label for="name">Nom</label>
+            <label for="name">Nom et prénom</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
             <small class="field-error" aria-live="polite"></small>
           </div>
@@ -352,11 +355,11 @@
             <small class="field-error" aria-live="polite"></small>
           </div>
           <div class="form-field">
-            <label for="message">Votre besoin</label>
-            <textarea id="message" name="message" rows="5" placeholder="Exemple : cabinet de kiné, ostéopathe, infirmier, besoin d’un site vitrine avec Doctolib..." required></textarea>
+            <label for="message">Motif de votre demande</label>
+            <textarea id="message" name="message" rows="5" placeholder="Exemple : douleur du dos, rééducation après opération, reprise du sport, question sur un rendez-vous ou suivi à domicile..." required></textarea>
             <small class="field-error" aria-live="polite"></small>
           </div>
-          <button class="btn btn-primary" type="submit">Demander ma démo</button>
+          <button class="btn btn-primary" type="submit">Envoyer ma demande</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -365,14 +368,20 @@
     <section class="pro-section" id="pro" aria-labelledby="pro-title">
       <div class="container pro-inner">
         <div>
-          <p class="section-kicker">Créer votre site</p>
+          <div class="pro-kicker-row">
+            <p class="section-kicker">Créer votre site</p>
+            <div class="zero-badge" aria-label="Hébergement mensuel offert à zéro euro">
+              <span>Hébergement mensuel offert</span>
+              <strong>0 €</strong>
+            </div>
+          </div>
           <h2 id="pro-title">Vous voulez un site comme celui-ci pour votre cabinet ?</h2>
           <p>Cette page montre le rendu possible : une présentation sérieuse, des informations utiles pour les patients, une prise de rendez-vous visible et un formulaire orienté conversion.</p>
           <p class="price">Site vitrine professionnel à partir de 299 €</p>
           <p class="hosting">Atout principal : hébergement possible à 0 €/mois, selon la solution choisie.</p>
           <ul class="pricing-details">
             <li>Page simple : 299 €, prix ajustable selon le besoin</li>
-            <li>Site complet : à partir de 2 500 €</li>
+            <li>Site complet : à partir de 800 €</li>
             <li>Petite modification mensuelle : 30 €</li>
             <li>Modification importante ou ajout de contenu : devis adapté</li>
             <li>Intégration d’un module de réservation, dont Doctolib via iframe si compatible : prix sur demande</li>
@@ -392,7 +401,7 @@
             <li>formulaire de contact</li>
             <li>localisation</li>
             <li>version mobile</li>
-            <li>hébergement possible à 0 €/mois</li>
+            <li class="feature-nowrap">hébergement possible à 0 €/mois</li>
           </ul>
           <div class="pro-steps" aria-label="Étapes de création">
             <span>1. Court échange</span>
