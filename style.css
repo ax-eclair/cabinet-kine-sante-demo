@@ -477,6 +477,15 @@ h3 {
   margin-bottom: 0;
 }
 
+.info-link-stack {
+  display: block;
+}
+
+.info-link-stack span {
+  display: block;
+  color: var(--muted);
+}
+
 .info-card a,
 .details-list a {
   text-decoration: underline;
@@ -1095,7 +1104,18 @@ a:focus-visible,
   border-color: #bf3d3d;
 }
 
+.turnstile-field {
+  display: grid;
+  gap: 7px;
+}
+
 .field-error {
+  min-height: 1.2em;
+  color: #9f2f2f;
+  font-weight: 650;
+}
+
+.turnstile-error {
   min-height: 1.2em;
   color: #9f2f2f;
   font-weight: 650;
