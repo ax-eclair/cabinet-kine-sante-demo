@@ -17,6 +17,18 @@ const bookingSelections = {
   consultation: "",
 };
 
+function scrollToSection(target) {
+  const header = document.querySelector(".site-header");
+  const headerHeight = header?.getBoundingClientRect().height || 0;
+  const offset = headerHeight + 24;
+  const targetTop = target.getBoundingClientRect().top + window.scrollY - offset;
+
+  window.scrollTo({
+    top: Math.max(targetTop, 0),
+    behavior: "smooth",
+  });
+}
+
 if (menuToggle) {
   menuToggle.addEventListener("click", () => {
     const isOpen = body.classList.toggle("menu-open");
@@ -35,7 +47,10 @@ navLinks.forEach((link) => {
     event.preventDefault();
     body.classList.remove("menu-open");
     menuToggle?.setAttribute("aria-expanded", "false");
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (doctolibModal?.classList.contains("is-open")) {
+      closeDoctolibDemo();
+    }
+    requestAnimationFrame(() => scrollToSection(target));
   });
 });
 

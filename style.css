@@ -236,6 +236,7 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 9px;
   min-height: 48px;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -245,6 +246,17 @@ textarea {
   text-align: center;
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, border-color 160ms ease;
   cursor: pointer;
+}
+
+.btn-icon {
+  width: 1.05em;
+  height: 1.05em;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
 .btn:hover {
@@ -1207,6 +1219,10 @@ a:focus-visible,
   font-weight: 760;
 }
 
+.hosting {
+  font-weight: 760;
+}
+
 .pricing-details {
   display: grid;
   gap: 8px;
@@ -1231,6 +1247,11 @@ a:focus-visible,
   min-height: 56px;
   padding-inline: 26px;
   font-size: 1.05rem;
+}
+
+.pro-whatsapp-btn {
+  min-height: 56px;
+  padding-inline: 22px;
 }
 
 .pro-offer {
