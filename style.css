@@ -1819,6 +1819,10 @@ a:focus-visible,
     scroll-padding-top: 76px;
   }
 
+  body.modal-open {
+    overflow: auto;
+  }
+
   .brand span:last-child {
     max-width: 220px;
     line-height: 1.15;
