@@ -1922,16 +1922,25 @@ a:focus-visible,
   }
 
   .doctolib-modal {
-    align-items: flex-end;
+    align-items: flex-start;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     padding: 12px;
   }
 
   .doctolib-panel {
-    height: min(760px, calc(100vh - 24px));
-    overflow-y: auto;
-    overscroll-behavior: contain;
+    margin: auto 0;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+    z-index: 1;
     padding: 26px 18px calc(34px + env(safe-area-inset-bottom));
     border-radius: 12px;
+  }
+
+  .doctolib-backdrop {
+    position: fixed;
   }
 
   .doctolib-brand {
