@@ -1773,6 +1773,7 @@ a:focus-visible,
   .two-column,
   .pro-inner {
     grid-template-columns: 1fr;
+    gap: 36px;
   }
 
   .team-card-featured {
@@ -1886,6 +1887,14 @@ a:focus-visible,
 
   .zero-badge strong {
     font-size: 1.05rem;
+  }
+
+  .pro-inner {
+    gap: 30px;
+  }
+
+  .pro-actions {
+    margin-top: 22px;
   }
 
   .info-card,
