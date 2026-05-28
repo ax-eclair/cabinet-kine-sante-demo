@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Cabinet Kine Sante Grenoble</title>
-  <desc id="desc">Image de partage du Cabinet Kine Sante Grenoble.</desc>
+  <title id="title">Cabinet Kiné Santé Grenoble</title>
+  <desc id="desc">Image de partage du Cabinet Kiné Santé Grenoble.</desc>
   <defs>
     <linearGradient id="page" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#eef9f9"/>
@@ -32,10 +32,10 @@
     <path d="M185 264c-26-22-46-38-46-63 0-20 15-35 35-35 12 0 22 6 28 16 6-10 15-16 27-16 20 0 35 15 35 35 0 25-20 41-46 63l-16 14-17-14Z" fill="url(#teal)"/>
     <path d="M179 211h12v12h12v12h-12v12h-12v-12h-12v-12h12v-12Z" fill="#f7fbfc"/>
   </g>
-  <text x="510" y="222" fill="#0a2740" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="850">Cabinet Kine Sante</text>
+  <text x="510" y="222" fill="#0a2740" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="850">Cabinet Kiné Santé</text>
   <text x="510" y="292" fill="#0a2740" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="850">Grenoble</text>
-  <text x="512" y="360" fill="#5c7080" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">Kinesitherapie, reeducation et accompagnement</text>
-  <text x="512" y="402" fill="#5c7080" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">personnalise a Grenoble.</text>
+  <text x="512" y="360" fill="#5c7080" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">Kinésithérapie et rééducation</text>
+  <text x="512" y="402" fill="#5c7080" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">accompagnement personnalisé à Grenoble.</text>
   <rect x="512" y="458" width="250" height="54" rx="27" fill="#167d9f"/>
   <text x="637" y="493" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800">Prendre rendez-vous</text>
 </svg>
